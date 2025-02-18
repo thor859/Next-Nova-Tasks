@@ -1,0 +1,114 @@
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background: #61608a;
+}
+
+.balls {
+  padding-top: 28px;
+  padding-left: 194px;
+}
+.balls .ball {
+  width: 12px;
+  height: 12px;
+  background: #14b351;
+  border-radius: 50%;
+  margin: 5px 0;
+}
+
+.ball-1 {
+  animation: ball 1016.9491525424ms ease-in-out infinite;
+}
+
+.ball-2 {
+  animation: ball 1034.4827586207ms ease-in-out infinite;
+}
+
+.ball-3 {
+  animation: ball 1052.6315789474ms ease-in-out infinite;
+}
+
+.ball-4 {
+  animation: ball 1071.4285714286ms ease-in-out infinite;
+}
+
+.ball-5 {
+  animation: ball 1090.9090909091ms ease-in-out infinite;
+}
+
+.ball-6 {
+  animation: ball 1111.1111111111ms ease-in-out infinite;
+}
+
+.ball-7 {
+  animation: ball 1132.0754716981ms ease-in-out infinite;
+}
+
+.ball-8 {
+  animation: ball 1153.8461538462ms ease-in-out infinite;
+}
+
+.ball-9 {
+  animation: ball 1176.4705882353ms ease-in-out infinite;
+}
+
+.ball-10 {
+  animation: ball 1200ms ease-in-out infinite;
+}
+
+.ball-11 {
+  animation: ball 1224.4897959184ms ease-in-out infinite;
+}
+
+.ball-12 {
+  animation: ball 1250ms ease-in-out infinite;
+}
+
+.ball-13 {
+  animation: ball 1276.5957446809ms ease-in-out infinite;
+}
+
+.ball-14 {
+  animation: ball 1304.347826087ms ease-in-out infinite;
+}
+
+.ball-15 {
+  animation: ball 1333.3333333333ms ease-in-out infinite;
+}
+
+.ball-16 {
+  animation: ball 1363.6363636364ms ease-in-out infinite;
+}
+
+.ball-17 {
+  animation: ball 1395.3488372093ms ease-in-out infinite;
+}
+
+.ball-18 {
+  animation: ball 1428.5714285714ms ease-in-out infinite;
+}
+
+.ball-19 {
+  animation: ball 1463.4146341463ms ease-in-out infinite;
+}
+
+.ball-20 {
+  animation: ball 1500ms ease-in-out infinite;
+}
+
+@keyframes ball {
+  0%, 100% {
+    transform: translate3d(50px, 0, 0);
+  }
+  50% {
+    transform: translate3d(-50px, 0, 0);
+  }
+}/*# sourceMappingURL=style.css.map */

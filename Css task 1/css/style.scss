@@ -1,0 +1,48 @@
+$duration: 60;
+$numberOfBalls: 20;
+$oscillations: 40;
+
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: #4C4BA2;
+  }
+  
+  .balls {
+    padding-top: 28px;
+    padding-left: 194px;
+  
+    .ball {
+      width: 12px;
+      height: 12px;
+      background: #14b351;
+      border-radius: 50%;
+      margin: 5px 0;
+    }
+  }
+ 
+  
+  
+  @for $i from 1 through $numberOfBalls {
+	$time: $duration / ($oscillations + $numberOfBalls - $i);
+	.ball-#{$i} {
+		animation: ball ($time * 1000) + ms ease-in-out infinite;
+	}
+}
+@keyframes ball {
+	0%, 100% {
+		transform: translate3d( 50px, 0,0 );
+	}
+	50% {
+		transform: translate3d( -50px, 0,0 );
+	}
+}
