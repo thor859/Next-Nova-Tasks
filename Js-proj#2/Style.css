@@ -1,3 +1,8 @@
+:root{
+    --line-border-fill: #2279b3;
+    --line-border-empty: #e0e0e0;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -24,4 +29,71 @@ body {
     margin-bottom: 30px;
     max-width: 100%;
     width: 350px;
+}
+
+.Progress-container::before {
+    background-color: var(--line-border-empty);
+    content: '';
+    position:absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 100%;  /*starting point of the progress bar is zero*/
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.progress {
+    background-color:var(--line-border-fill);
+    position:absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    height: 3px;
+    width: 75%;  /*starting point of the blue progress bar is zero*/
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.circle {
+    background-color: #ffffff;
+    color: #999;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: .4s ease;
+}
+
+.circle.active {
+    border-color: var(--line-border-fill);
+}
+
+.btn{
+    background-color: var(--line-border-fill);
+    color: #ffffff;
+    border: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 20px;
+    margin: 5px;
+    font-size: 14px;
+
+}
+
+.btn.active{
+    transform: scale(0.98);
+}
+.btn.focus{
+    outline: 0;
+}
+
+.btn:disabled{
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
 }
