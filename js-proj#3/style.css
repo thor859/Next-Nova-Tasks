@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+  }
+
+ body{
+    overflow-x: hidden;
+    background-color: rgb(241, 222, 205);
+ }
+
+ .content img {
+    max-width: 100%;
+  }
