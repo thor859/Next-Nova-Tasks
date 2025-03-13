@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.bg {
+  background-image: url("images/wolfi.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+
+
+  /*before ///////*/
+  /* top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; 
+  filter: blur(0px);   */
+
+  top: -30px;
+  left: -30px;
+  width: calc(100vw + 60px);
+  height: calc(100vh + 60px); /*to remove the white border around the image when its blur to understand it better chnge blur value to 40 or 70*/
+  z-index: -1;
+  filter: blur(00px);
+}
+
+.loading-text {
+  font-size: 50px;
+  color: rgb(33, 32, 146);
+}
