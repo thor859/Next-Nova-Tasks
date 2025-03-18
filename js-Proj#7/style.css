@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+.container {
+    position:relative;
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+
+.split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background: url(ps.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.split.left::before{
+    content: "";
+    position: absolute;
+    width: 10;
+}
+
+.split.right {
+    right: 0;
+    background: url(xbox.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
